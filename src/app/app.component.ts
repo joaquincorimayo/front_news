@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'front_news';
+
+  searchNews(p: any) {
+    console.log(p);
+  }
+
 }
