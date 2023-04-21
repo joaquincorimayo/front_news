@@ -1,4 +1,7 @@
 <div class="container">
   <app-form (paramsSelected)="searchNews($event)"></app-form>
-  <app-list-news></app-list-news>
+  <app-spinner *ngIf="isLoading"></app-spinner>
+  <!--  child - root-->
+  <app-list-news [listNews]="listNews"></app-list-news>
+
 </div>

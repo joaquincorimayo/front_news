@@ -10,6 +10,8 @@ import {FormsModule} from "@angular/forms";
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HttpClientModule} from "@angular/common/http";
+import { SpinnerComponent } from './components/spinner/spinner.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +21,14 @@ import { FooterComponent } from './components/footer/footer.component';
     NavbarComponent,
     PagenotfoundComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    SpinnerComponent
   ],
     imports: [
         BrowserModule,
         AppRoutingModule,
-        FormsModule
+        FormsModule,
+        HttpClientModule
     ],
   providers: [],
   bootstrap: [AppComponent]
