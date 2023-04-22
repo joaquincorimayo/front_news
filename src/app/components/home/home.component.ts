@@ -16,7 +16,7 @@ export class HomeComponent {
     this.listNews = [];
 
     setTimeout(() => {
-      this._newsService.getNews(p).subscribe(data => {
+      this._newsService.getNewsFilter(p).subscribe(data => {
         console.log(data);
         this.isLoading = false;
         this.listNews = data.articles;

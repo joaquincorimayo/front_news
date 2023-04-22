@@ -1,0 +1,37 @@
+<div class="d-flex justify-content-center mb-5">
+  <div class="card" style="width: 48rem">
+    <div class="border border-left border-right px-0">
+      <div class="p-3 border-bottom">
+        <h4 class="d-flex align-items-center mb-0">
+          <i class="far fa-xs fa-star ms-auto text-primary text-center">Business NEWS!</i>
+        </h4>
+      </div>
+
+      <div>
+        <div>
+          <!--          NEWS-->
+          <div class="d-flex p-3 border-bottom" *ngFor="let n of listNews">
+            <!--            IMAGE-->
+            <img [src]="n.urlToImage" class="rounded-circle"
+                 height="50" loading="lazy" alt=""/>
+            <!--            CONTENT-->
+            <div class="d-flex w-100 ps-3">
+              <div>
+                <a>
+                  <h6 class="text-body">
+                    {{n.author}}
+                    <span class="small text-muted font-weight-normal">@{{n.source.name}}</span>
+                    <span class="small text-muted font-weight-normal"> • </span>
+                    <span class="small text-muted font-weight-normal">{{n.publishedAt | date: 'dd/MM/yyyy'}}</span>
+                    <span><i class="fas fa-angle-down float-end"><a [href]="n.url" target="_blank">MORE INFORMATION</a></i></span>
+                  </h6>
+                </a>
+                <p style="line-height: 1.2;">{{n.title}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

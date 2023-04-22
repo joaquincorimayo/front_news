@@ -12,6 +12,10 @@ import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule} from "@angular/common/http";
 import { SpinnerComponent } from './components/spinner/spinner.component';
+import { BusinessComponent } from './components/business/business.component';
+import { EntertainmentComponent } from './components/entertainment/entertainment.component';
+import { ScienceComponent } from './components/science/science.component';
+import { SportsComponent } from './components/sports/sports.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
     PagenotfoundComponent,
     HomeComponent,
     FooterComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    BusinessComponent,
+    EntertainmentComponent,
+    ScienceComponent,
+    SportsComponent
   ],
     imports: [
         BrowserModule,
