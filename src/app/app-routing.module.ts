@@ -6,6 +6,7 @@ import {BusinessComponent} from "./components/business/business.component";
 import {EntertainmentComponent} from "./components/entertainment/entertainment.component";
 import {ScienceComponent} from "./components/science/science.component";
 import {SportsComponent} from "./components/sports/sports.component";
+import {UserDetailsComponent} from "./components/user-details/user-details.component";
 
 const routes: Routes = [
   {path:'', redirectTo: '/home', pathMatch: 'full'},
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path:'entertainment', component: EntertainmentComponent},
   {path:'science', component: ScienceComponent},
   {path:'sports', component: SportsComponent},
+  {path:'user-details', component: UserDetailsComponent},
   {path:'**', component: PagenotfoundComponent}
 ];
 

@@ -16,6 +16,7 @@ import { BusinessComponent } from './components/business/business.component';
 import { EntertainmentComponent } from './components/entertainment/entertainment.component';
 import { ScienceComponent } from './components/science/science.component';
 import { SportsComponent } from './components/sports/sports.component';
+import { UserDetailsComponent } from './components/user-details/user-details.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { SportsComponent } from './components/sports/sports.component';
     BusinessComponent,
     EntertainmentComponent,
     ScienceComponent,
-    SportsComponent
+    SportsComponent,
+    UserDetailsComponent
   ],
     imports: [
         BrowserModule,
